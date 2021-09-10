@@ -13,6 +13,6 @@ void loop() {
   if(digitalRead(buttonPin) == HIGH){ //Als de knop word ingedrukt gaan we de if statement in
     lastStatus = !lastStatus; //We draaien de boolean om door te zeggen dat de boolean het tegenovergestelde is van zijn huidige waarde
     digitalWrite(ledPin, lastStatus); //We geven deze waarde door aan de led
-    delay(1000); //We laten de arduino even wachten zodat het lampje niet héél snel aan en uit gaat
+    delay(500); //We laten de arduino even wachten zodat het lampje niet héél snel aan en uit gaat
   }
 }
